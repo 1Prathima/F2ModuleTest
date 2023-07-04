@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <p class="heading">Student Management CRUD</p>
+    <section>
+        <div class="student-form">
+            <form action="" method="get">
+                
+                <div>
+                    <input type="text" id="name" name="name" placeholder="Name">
+                </div>
+                <div>
+                    <input type="email" id="email" name="email" placeholder="Email">
+                </div>
+                <div>
+                    <input type="number" id="grade" name="grade" placeholder="GPA">
+                </div>
+                <div>
+                    <input type="number" id="age" name="age" placeholder="Age">
+                </div>
+                <div>
+                    <input type="text" id="degree" name="degree" placeholder="Degree">
+                </div>
+                
+            </form>
+            <div class="add-button" onclick="addStudent()">
+                <button id="button">Add Student</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="search">
+            <input type="search" id="search" name="search" placeholder="Search By Name, email or degree">
+        </div>
+    </section>
+
+    <section>
+        <div class="student-table" id="student-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Student Name</th>
+                        <th>Email</th>
+                        <th>Age</th>
+                        <th>GPA</th>
+                        <th>Degree</th>
+                    </tr>
+                </thead>
+
+                <tbody id="student-container">
+                
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./index.js"></script>
+</body>
+</html>
